@@ -157,6 +157,7 @@
       
         <div class="section local_area">
             <h3>📦 강북구 퀵서비스 전차종 신속 배차 가이드</h3>
+          <p>미아동 번동 수유동 우이동 삼양동 송중동 송천동 삼각산동 인수동 강북 수유리 수유역 미아역 미아리 미아삼거리 전지역</p><br>
             <ul>
                 <li>🏍️ 강북구오토바이퀵 : 소형 긴급 화물 및 중요 서류 신속한 배송 지원</li>
                 <li>🚙 강북구다마스퀵 : 소규모 이삿짐 및 가전/가구 안전한 퀵서비스</li>
@@ -254,5 +255,28 @@
       </footer>
    </div>
 </div>
+  <script>
+  // 마우스 우클릭 차단
+  document.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+  });
+
+  // 드래그 차단
+  document.addEventListener('dragstart', function (e) {
+    e.preventDefault();
+  });
+
+  // 텍스트 선택(블록 지정) 차단
+  document.addEventListener('selectstart', function (e) {
+    e.preventDefault();
+  });
+
+  // 복사 키(Ctrl+C / Cmd+C) 차단
+  document.addEventListener('keydown', function (e) {
+    if ((e.ctrlKey || e.metaKey) && e.key === 'c') {
+      e.preventDefault();
+    }
+  });
+</script>
 </body>
 </html>
